@@ -7,7 +7,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine-html.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/boot.min.js"></script>
     <script type="text/javascript" src="https://code.angularjs.org/1.4.0-rc.2/angular.min.js"></script>
-    <script src="//code.angularjs.org/1.4.0-rc.2/angular-mocks.js"></script>
+    <script src="https://code.angularjs.org/1.4.0-rc.2/angular-mocks.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <!-- the value for ngClick maps to the sum function within the controller body -->
             <input type="button" ng-click="sum()" value="+">
             <input type="button" ng-click="subtract()" value="-">
-            <input type="button" ng-click="subtract()" value="&divide;">
+            <input type="button" ng-click="divide()" value="&divide;">
         </div>
     </div>
 </body>
@@ -39,7 +39,7 @@
             $scope.z = $scope.x-$scope.y;
         }
         
-        $scope.divide=function (x, y) {
+        $scope.divide=function () {
             $scope.z = ($scope.y === 0) ? 0 : $scope.x / $scope.y;
         }
 
